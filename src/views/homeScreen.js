@@ -9,6 +9,8 @@ import {
 
 import { styles } from '../styles/styles.js';
 
+import { PlacesModal } from './placesModal.js';
+
 export default class HomeScreen extends Component {
 
     constructor(props){
@@ -23,9 +25,14 @@ export default class HomeScreen extends Component {
         const { navigate } = this.props.navigation;
         return (
             <View style={styles.container}>
-                <Text style={styles.largeHeader}>Landing Page</Text>
-                <Text style={styles.mediumHeader}>Lookup By Address</Text>
-                <TextInput style={styles.textInput} onChangeText={(text) => this.setState({text})} value={this.state.text}/>
+                <Text style={styles.largeHeader}>
+                    repUS
+                </Text>
+                <Text style={styles.info}>
+                    In order to identify which district you are associated with, please search for your address below. This data is merely to identify the district number, your address will not be saved.
+                </Text>
+                <PlacesModal/>
+                <View style={styles.lineBreak}/>
                 <Button
                     onPress={() => navigate('RepScreen')}
                     title="Representatives"

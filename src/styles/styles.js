@@ -17,9 +17,20 @@ export const styles = StyleSheet.create({
         marginBottom: 20,
         marginTop: 20
     },
-    textInput: {
-        height: 40,
-        borderColor: 'gray',
-        borderWidth: 1
+    addressSearch: {
+        backgroundColor: '#87CEFA',
+        padding: 10,
+        textAlign: 'center',
+        color: 'white',
+        fontSize: 20
+    },
+    info: {
+        marginTop: 20
+    },
+    lineBreak: {
+        borderBottomWidth: 1,
+        borderBottomColor: 'white',
+        width: '100%',
+        marginBottom: 10
     }
 });
