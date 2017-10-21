@@ -9,7 +9,7 @@ import {
 
 import { styles } from '../styles/styles.js';
 
-import { PlacesModal } from './placesModal.js';
+import { PlacesModal } from '../components/placesModal.js';
 
 export default class HomeScreen extends Component {
 

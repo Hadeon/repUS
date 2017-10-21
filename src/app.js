@@ -8,9 +8,9 @@ import {
 } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 
-import HomeScreen from './views/homeScreen.js';
-import RepScreen from './views/repScreen.js';
-import RepDetails from './views/repDetails.js';
+import HomeScreen from './containers/homeScreen.js';
+import RepScreen from './containers/repScreen.js';
+import RepDetails from './containers/repDetails.js';
 
 export const mobile = StackNavigator({
    Home: { screen: HomeScreen },
