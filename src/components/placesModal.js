@@ -17,7 +17,7 @@ export class PlacesModal extends Component {
     
     openSearchModal() {
         RNGooglePlaces.openAutocompleteModal().then((place) => {
-
+            console.log(place.longitude + ' : ' + place.latitude);
             this.setState(previousState => {
                 return { placeDetails: place.longitude + ' ' + place.latitude }
             });
